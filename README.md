@@ -9,3 +9,5 @@
 
  when animal have a bowel movement or urinate it detects the area of excrement. If this area getting bigger than before machine will give compensation. But, if there is no changed it will not give compensation.
 <img src="https://imgur.com/a/JeKadvV"></img>
+
+![image](https://imgur.com/a/JeKadvV)
