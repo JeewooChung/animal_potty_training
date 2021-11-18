@@ -4,7 +4,7 @@ const admin = require('firebase-admin');
 const fs = require('fs');
 
 var serviceAccount = require("./message-5c0a2-firebase-adminsdk-5l4ts-03f8e9eaa6.json");
-let registrationToken = "ffqFfOP4Svu2OrOZL8Gx_W:APA91bHYb8VleQy4K62D61lCxPLPf_-Jm-k-GLVCTLdIIUtupU33zvI6c7bfBnisLuPvpDV20O5Qr3aWt_aqGeM2CLuivAzbghVV7eBuTFk4flgSNLOgHkdzQg9bCaRTEthcxEB5SuRj";
+let registrationToken = "put your device token";
 
 var SerialPort = require('serialport').SerialPort;
 
@@ -30,8 +30,8 @@ admin.initializeApp({
   port.on('data', (req, res) => {
     let payload = {
         notification: {
-            title: "패드가 더럽습니다!",
-            body: "패드 교체해주세요!"
+            title: "Potty pad is dirty!",
+            body: "Please change potty pad!"
         }
     };
     admin.messaging().sendToDevice(registrationToken, payload)
